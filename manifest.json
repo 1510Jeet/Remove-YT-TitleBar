@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Hide YouTube Title Bar",
+  "description": "Automatically hides the YouTube title bar on www.youtube.com",
+  "version": "1.0",
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
